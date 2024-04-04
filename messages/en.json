@@ -2,6 +2,12 @@
   "Index": {
     "instruction": "Enter the type of pokemon that you are attacking",
     "calculate": "Calculate best counter type",
+    "createdBy": "Created by",
+    "creator": "Chan Sik Lam, Jerry (GitHub: lalalam123)",
+    "haveQuestion": "Have any question?",
+    "giveAdvice": "Click here to create an issue on Github",
+    "or": "or",
+    "contactMe": "Contact me via email (jerrychan2206@gmail.com)",
     "pokemonType1": "Pokemon Type 1",
     "pokemonType2": "Pokemon Type 2",
     "selectPokemonTypePlaceholder": "Select a Pokemon Type",

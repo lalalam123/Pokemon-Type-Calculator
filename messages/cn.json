@@ -2,6 +2,12 @@
   "Index": {
     "instruction": "輸入你正在攻擊的寶可夢的屬性，若為單屬性，輸入其中一框即可",
     "calculate": "尋找最佳對應屬性",
+    "createdBy": "作者為",
+    "creator": "陳錫霖 (Chan Sik Lam, Jerry) GitHub: @lalalam123",
+    "haveQuestion": "如有問題?",
+    "giveAdvice": "歡迎在開發者社群提出",
+    "or": "或",
+    "contactMe": "電郵聯絡我 (jerrychan2206@gmail.com)",
     "pokemonType1": "第一屬性",
     "pokemonType2": "第二屬性(若無，可空置)",
     "selectPokemonTypePlaceholder": "選一項屬性",

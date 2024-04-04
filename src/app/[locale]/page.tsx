@@ -42,6 +42,10 @@ export default function Home() {
       }
       // console.log(pokemonType1Rate, pokemonType2Rate);
       let totalRate = 1 * pokemonType1Rate * pokemonType2Rate;
+
+      if (totalRate !== 1) {
+        totalRate = Math.round(totalRate * 100) / 100;
+      }
       pokemonRates.push({ label: pokemon.label, value: totalRate });
     });
 
@@ -130,7 +134,7 @@ export default function Home() {
         {pokemonTackleList.map((item, index) => (
           <div
             key={index}
-            className="m-2 flex flex-row text-center align-middle justify-center items-center w-4/5 self-center lg:self-auto lg:w-1/2 bg-gray-200 rounded-lg p-4 shadow-lg dark:bg-gray-800"
+            className="m-2 flex flex-row text-center align-middle justify-start items-center w-4/5 self-center lg:self-auto lg:w-1/2 bg-gray-200 rounded-lg p-4 shadow-lg dark:bg-gray-800"
           >
             <Image
               className="mr-4"
@@ -139,13 +143,48 @@ export default function Home() {
               height={28}
               alt={item.label}
             />
-            <p className="font-bold text-lg mr-4">{translated(item.label.toLowerCase())}</p>
-            <p className={`font-semibold ${item.value < 1 ? "text-red-500" : "text-green-500"}`}>
+            <p className="flex-grow font-bold text-lg mr-4">
+              {translated(item.label.toLowerCase())}
+            </p>
+            <p
+              className={`flex-grow text-right font-semibold ${
+                item.value < 1 ? "text-red-500" : "text-green-500"
+              }`}
+            >
               {item.value}
             </p>
           </div>
         ))}
       </main>
+      <footer className="flex flex-col sm:flex-row justify-center items-center w-full h-auto border-t border-gray-200 dark:border-gray-700">
+        <p className="text-gray-600 dark:text-gray-300 text-center">{translated("createdBy")}</p>
+        <a
+          href="https://github.com/lalalam123/Pokemon-Type-Calculator"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-1 text-blue-500 hover:underline mr-3 text-center"
+        >
+          {translated("creator")}
+        </a>
+        <p className="text-gray-600 dark:text-gray-300 text-center">{translated("haveQuestion")}</p>
+        <a
+          href="https://github.com/lalalam123/Pokemon-Type-Calculator/issues/new"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-1 text-blue-500 hover:underline mr-3 text-center"
+        >
+          {translated("giveAdvice")}
+        </a>
+        <p className="text-gray-600 dark:text-gray-300 text-center">{translated("or")}</p>
+        <a
+          href="mailto:jerrychan2206@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-1 text-blue-500 hover:underline mr-3 text-center"
+        >
+          {translated("contactMe")}
+        </a>
+      </footer>
     </NextUIProvider>
   );
 }
