@@ -1,0 +1,30 @@
+{
+  "Index": {
+    "instruction": "Enter the type of pokemon that you are attacking",
+    "calculate": "Calculate best counter type",
+    "pokemonType1": "Pokemon Type 1",
+    "pokemonType2": "Pokemon Type 2",
+    "selectPokemonTypePlaceholder": "Select a Pokemon Type",
+    "water": "Water",
+    "fire": "Fire",
+    "grass": "Grass",
+    "electric": "Electric",
+    "ice": "Ice",
+    "rock": "Rock",
+    "ground": "Ground",
+    "flying": "Flying",
+    "psychic": "Psychic",
+    "dark": "Dark",
+    "ghost": "Ghost",
+    "dragon": "Gragon",
+    "fairy": "Fairy",
+    "steel": "Steel",
+    "bug": "Bug",
+    "poison": "Poison",
+    "fighting": "Fighting",
+    "normal": "Normal",
+    "error": "This page does not exist",
+    "errorAction": "Go back to the home page",
+    "changeLanguage": "Change to Chinese(中文)"
+  }
+}

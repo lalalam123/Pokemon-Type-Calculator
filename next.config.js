@@ -1,11 +1,12 @@
 // @ts-check
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "de", "fr"],
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
+
+const withNextIntl = require("next-intl/plugin")();
+
+module.exports = withNextIntl({
+  // Other Next.js configuration ...
+});
