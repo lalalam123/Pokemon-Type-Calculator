@@ -143,7 +143,7 @@ export default function Home() {
               height={28}
               alt={item.label}
             />
-            <p className="flex-grow font-bold text-lg mr-4">
+            <p className="text-white flex-grow font-bold text-lg mr-4">
               {translated(item.label.toLowerCase())}
             </p>
             <p
